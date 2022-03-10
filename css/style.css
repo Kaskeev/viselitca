@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+h1 {
+  margin: 20px 0 0;
+}
+.start {
+  max-width: 300px;
+}
+.game-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+.left__container {
+  margin-top: 50px;
+}
+.right__content {
+  display: none;
+  padding-top: 50px;
+  padding-left: 200px;
+  position: relative;
+  border-left: 1px solid #000;
+}
+#start__btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  border: black 1px solid;
+  color: white;
+  font-size: large;
+  position: absolute;
+  bottom: 100px;
+  left: 45%;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: rgb(74, 197, 94);
+}
+.figure-container {
+  margin-top: 50px;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.figure-part {
+  display: none;
+}
+.word {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateX(-50%);
+}
+.word__title {
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  transform: translateX(-50%);
+}
+.letter {
+  border-bottom: 3px solid #2980b9;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #2980b9;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.popup button:active {
+  transform: scale(0.98);
+}
+
+.popup button:focus {
+  outline: 0;
+}
